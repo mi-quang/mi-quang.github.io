@@ -1,2 +1,2 @@
-I"<p>Let \($\) be an essentially self-adjoint operator with respect to the \($\)-finite measure \($\) of the measurable space \($\).  By spectral theory, \($\) is uniquely associated with a self-adjoint strongly continuous contraction semigroup \($\) on \($\).</p>
+I"S<p>Let \(\mathcal{L}\) be an essentially self-adjoint operator with respect to the \(\sigma\)-finite measure \(\mu\) of the measurable space \((E, \mathcal{F})\).  By spectral theory, \(\mathcal{L}\) is uniquely associated with a self-adjoint strongly continuous contraction semigroup \((P_t)_{t \in \mathbb{R}_+}\) on \(L^2(E,\mu)\).</p>
 :ET
