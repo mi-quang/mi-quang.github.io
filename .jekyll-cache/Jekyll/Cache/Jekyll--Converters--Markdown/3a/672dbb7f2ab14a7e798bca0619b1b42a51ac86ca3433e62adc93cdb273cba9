@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-15T02:50:17+02:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Semigroup in lp</title><link href="http://localhost:4000/2024/05/14/Semigroup-in-Lp.html" rel="alternate" type="text/html" title="Semigroup in lp" /><published>2024-05-14T00:00:00+02:00</published><updated>2024-05-14T00:00:00+02:00</updated><id>http://localhost:4000/2024/05/14/Semigroup%20in%20Lp</id><content type="html" xml:base="http://localhost:4000/2024/05/14/Semigroup-in-Lp.html"><![CDATA[<p>Let \(\mathcal{L}\) be an essentially self-adjoint operator with respect to the \(\sigma\)-finite measure \(\mu\) of the measurable space \((E, \mathcal{F})\).  By spectral theory, \(\mathcal{L}\) is uniquely associated with a self-adjoint strongly continuous contraction semigroup \((P_t)_{t \in \mathbb{R}_+}\) on \(L^2(E,\mu)\).</p>
+I"!I<p>Let \(\mathcal{L}\) be an essentially self-adjoint operator with respect to the \(\sigma\)-finite measure \(\mu\) of the measurable space \((E, \mathcal{F})\).  By spectral theory, \(\mathcal{L}\) is uniquely associated with a self-adjoint strongly continuous contraction semigroup \((P_t)_{t \in \mathbb{R}_+}\) on \(L^2(E,\mu)\).</p>
 
 <p>In this note, our goal is to explain the extension this semigroup beyond \(L^2\) space, focusing on constructing corresponding semigroups \((P_t)\) for \(L^p\) spaces using the interpolation theorem. Additionally, we will examine the exponential convergence rate of \((P_t)\) across all \(L^p\) spaces (for \(p \in [1, \infty]\) ) under ultracontractivity and the Poincaré inequality. These results are stated as follows:</p>
 
@@ -209,11 +209,6 @@ Hence, for all \(f \in L^2\),
 Thus, there exists a constant \(c_0 \ge 1\) such that for all \(f\)  such that \(\int f=0\) and \(p \in [1,\infty]\),
 \($\| P_t f\|_p \le c_0 e^{-2\pi t} \| f\|_p.$\)
 <em>Remark</em>: If \(f\) is only a differentiable function such that \(f(0)=f(1)\), i.e., we do not assume \(f'(0)=f'(1)\). Then, we only have:
-\($\int_{[0,1]} (f')^2 \ge (\pi)^2 \int_{[0,1]} f^2.$\)</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Let \(\mathcal{L}\) be an essentially self-adjoint operator with respect to the \(\sigma\)-finite measure \(\mu\) of the measurable space \((E, \mathcal{F})\). By spectral theory, \(\mathcal{L}\) is uniquely associated with a self-adjoint strongly continuous contraction semigroup \((P_t)_{t \in \mathbb{R}_+}\) on \(L^2(E,\mu)\).]]></summary></entry><entry><title type="html">Bananas</title><link href="http://localhost:4000/2018/08/20/bananas.html" rel="alternate" type="text/html" title="Bananas" /><published>2018-08-20T00:00:00+02:00</published><updated>2018-08-20T00:00:00+02:00</updated><id>http://localhost:4000/2018/08/20/bananas</id><content type="html" xml:base="http://localhost:4000/2018/08/20/bananas.html"><![CDATA[<p>A banana is an edible fruit – botanically a berry – produced by several
-kinds of large herbaceous flowering plants in the genus Musa.</p>
+\($\int_{[0,1]} (f')^2 \ge (\pi)^2 \int_{[0,1]} f^2.$\)</p>
 
-<p>\(\frac{1}{2}\)</p>
-
-\[\frac{1}{2}\]
-
-<p>abc \($\frac{1}{2}$\)</p>]]></content><author><name>Toan</name></author><summary type="html"><![CDATA[A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.]]></summary></entry></feed>
+:ET
