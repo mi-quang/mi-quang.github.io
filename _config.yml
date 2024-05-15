@@ -1,0 +1,32 @@
+collections:
+  authors:
+    output: true
+
+kramdown:
+  input: GFMKatex
+
+domain: mi-quang.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://mi-quang.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /mi-quang.github.io      # place folder name if the site is served in a subfolder
+icon: /assets/img/favicon.png
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+mathjax:
+  version: "3.2.2"
