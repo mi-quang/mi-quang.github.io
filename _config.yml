@@ -2,14 +2,13 @@ collections:
   authors:
     output: true
 
-kramdown:
-  input: GFM
 
   
-url:  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl:       # place folder name if the site is served in a subfolder
+
 icon: /assets/img/favicon.png
 
+kramdown:
+  input: GFMKatex
 
 defaults:
   - scope:
@@ -31,7 +30,3 @@ defaults:
 mathjax:
   version: "3.2.2"
 
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
