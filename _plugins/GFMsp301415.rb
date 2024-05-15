@@ -2,7 +2,6 @@ require 'kramdown/parser/kramdown'
 require 'kramdown-parser-gfm'
 
 class Kramdown::Parser::GFMKatex < Kramdown::Parser::GFM
-
     # Override inline math parser
     @@parsers.delete(:inline_math)
 
