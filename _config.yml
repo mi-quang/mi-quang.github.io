@@ -8,7 +8,7 @@ collections:
 icon: /assets/img/favicon.png
 
 kramdown:
-  input: GFMKatex
+  input: GFM
 
 domain: mi-quang.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://mi-quang.github.io  
