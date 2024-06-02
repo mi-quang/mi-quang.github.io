@@ -47,6 +47,10 @@
       <br />
       <button onclick="thirtyMinutes()" type="button">30 Minutes</button>
       <button onclick="tenMinutes()" type="button">10 Minutes</button>
+      <br />
+      <button onclick="setVolumeHigh()" type="button">High</button>
+      <button onclick="setVolumeMedium()" type="button">Medium</button>
+      <button onclick="setVolumeLow()" type="button">Low</button>
       <p id="countdown"></p>
     </center>
   </body>
@@ -64,6 +68,18 @@
       });
     }
 
+    function setVolumeHigh() {
+      audioElement.volume = 1;
+    }
+
+    function setVolumeMedium() {
+      audioElement.volume = 0.7;
+    }
+
+    function setVolumeLow() {
+      audioElement.volume = 0.35;
+    }
+
     function startTimer() {
       // Play immediately when starting
       cancelTimer();
@@ -77,6 +93,10 @@
           playAudio();
         }
       }, 1000);
+    }
+
+    function formatNumber(num, padding) {
+      return num.toString().padStart(padding, "0");
     }
 
     function oneHour() {
@@ -116,7 +136,7 @@
     function toMinutes(seconds) {
       remainders = seconds % 60;
       minutes = (seconds - remainders) / 60;
-      return minutes + ":" + remainders;
+      return formatNumber(minutes, 2) + ":" + formatNumber(remainders, 2);
     }
   </script>
 </html>
