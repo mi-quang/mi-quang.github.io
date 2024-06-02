@@ -70,6 +70,7 @@
 
       intervalId = setInterval(function () {
         display.textContent = toMinutes(timer);
+        document.title = toMinutes(timer);
         timer--;
         if (timer <= 0) {
           timer = duration;
