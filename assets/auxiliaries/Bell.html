@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./lib/bellFlavicon.png" />
+    <title>Bell</title>
+    <audio id="myAudio">
+      <source src="./lib/bell1.mp3" type="audio/mpeg" />
+    </audio>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: #585e6a;
+      }
+
+      button {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #911945;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #a33f64;
+      }
+
+      p#countdown {
+        font-size: 36px;
+        margin-top: 20px;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <button onclick="pauseTimer()" type="button">Pause</button>
+      <button onclick="restartTimer()" type="button">Restart</button>
+      <br />
+      <button onclick="thirtyMinutes()" type="button">30 Minutes</button>
+      <button onclick="tenMinutes()" type="button">10 Minutes</button>
+      <p id="countdown"></p>
+    </center>
+  </body>
+  <script>
+    let timer = 0;
+    let display = document.getElementById("countdown");
+    let intervalId;
+    let duration = 600;
+    let audioElement = document.getElementById("myAudio");
+
+    function playAudio() {
+      audioElement.currentTime = 0;
+      audioElement.play().catch(function (error) {
+        console.error("Audio play failed:", error);
+      });
+    }
+
+    function startTimer() {
+      // Play immediately when starting
+      cancelTimer();
+
+      intervalId = setInterval(function () {
+        display.textContent = toMinutes(timer);
+        timer--;
+        if (timer <= 0) {
+          timer = duration;
+          playAudio();
+        }
+      }, 1000);
+    }
+
+    function oneHour() {
+      playAudio();
+      duration = 3600;
+      startTimer(); // 3600 seconds = 1 hour
+    }
+
+    function thirtyMinutes() {
+      playAudio();
+      duration = 1800;
+      startTimer(); // 1800 seconds = 30 minutes
+    }
+    function tenMinutes() {
+      playAudio();
+      duration = 600;
+      startTimer(); // 600 seconds = 30 minutes
+    }
+
+    function cancelTimer() {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    }
+
+    function pauseTimer() {
+      playAudio();
+      cancelTimer();
+    }
+
+    function restartTimer() {
+      playAudio();
+      timer = duration;
+      startTimer();
+    }
+
+    function toMinutes(seconds) {
+      remainders = seconds % 60;
+      minutes = (seconds - remainders) / 60;
+      return minutes + ":" + remainders;
+    }
+  </script>
+</html>
